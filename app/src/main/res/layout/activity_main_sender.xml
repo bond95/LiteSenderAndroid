@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:id="@+id/textPath"
+        android:layout_weight="0"
+        android:height="35px" />
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/list_dir"
+        android:layout_weight="5"
+        android:numColumns="4"
+        android:nestedScrollingEnabled="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Backs"
+            android:id="@+id/back"
+            android:onClick="onClickBack" />
+    </RelativeLayout>
+
+</LinearLayout>
